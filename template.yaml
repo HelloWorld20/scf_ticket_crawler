@@ -1,0 +1,28 @@
+Resources:
+  default:
+    Type: TencentCloud::Serverless::Namespace
+    crawler:
+      Properties:
+        CodeUri: .
+        Description: helloworld 空白模板函数
+        Environment:
+          Variables:
+            NODE_ENV: production
+            mongo_host: 118.24.146.135
+            mongo_port: "27017"
+            mongo_user: user
+            mongo_password: 7Ih15DBAoPLk6kQV
+        Events:
+          crawler-timer:
+            Properties:
+              CronExpression: 0 0 */1 * * * *
+              Enable: true
+            Type: Timer
+        Handler: index.main_handler
+        MemorySize: 128
+        Runtime: Nodejs8.9
+        Timeout: 60
+        VpcConfig:
+          SubnetId: ''
+          VpcId: ''
+      Type: TencentCloud::Serverless::Function

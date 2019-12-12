@@ -1,0 +1,69 @@
+{
+  "serverless-cloud-function-application": {
+    "application":{
+      "Chinese":{
+        "name": "helloworld",
+        "description": "helloworld 空白模板函数",
+        "attention": "无",
+        "readme": {
+            "file": "",
+            "content": ""
+        },
+        "license": {
+            "file": "",
+            "content": "公开"
+        },
+        "author": {
+            "name": "腾讯云无服务器云函数团队"
+        }
+      },
+      "English":{
+        "name": "helloworld",
+        "description": "This is helloworld function",
+        "attention": "No",
+        "readme": {
+            "file": "",
+            "content": ""
+        },
+        "license": {
+            "file": "",
+            "content": "Open"
+        },
+        "author": {
+            "name": "Tencent Cloud Serverless Team"  
+        }
+      },
+      "input_parameters":{
+        },
+        "output_parameters":{
+        },
+      "download_address":"https://github.com/tencentyun/scf-demo-repo/tree/master/Nodejs8.9-helloworld",
+      "tags":[
+              "Nodejs8.9", "helloworld"  
+      ],
+      "version": "1.0.5"
+    },
+    "functions": {
+      "name": "helloworld",  
+      "description": "helloworld 空白模板函数",
+      "handler":"index.main_handler",
+      "memorySize": 128,  
+      "timeout": 30,  
+      "runtime": "Nodejs8.9",
+      "Environment":{
+      },      
+      "Events":{
+      },      
+      "VpcConfig":{
+      },
+      "codeObject": {
+          "codeFile": [
+              "index.js"
+          ],
+          "CodeUri":[     
+              "https://github.com/tencentyun/scf-demo-repo/tree/master/Nodejs8.9-helloworld"
+          ]
+      }
+    }
+  }
+}
